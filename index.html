@@ -1,18 +1,36 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Synergy Web Solutions - Crafting Digital Excellence</title>
-    <meta name="description" content="Synergy Web Solutions offers cutting-edge web development, UI/UX design, and digital strategy services to elevate your online presence.">
+    <title>Oregon Chamber of Commerce Directory | Interactive Analysis</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore an interactive directory of Oregon's Chambers of Commerce. Analyze effectiveness scores, find contact information, and connect with organizations driving Oregon's local economies.">
+    <meta name="keywords" content="Oregon Chamber of Commerce, Oregon Business, Oregon Economy, Business Directory, Oregon, Chamber of Commerce Analysis">
+    
+    <!-- Open Graph (Facebook) Tags -->
+    <meta property="og:title" content="Oregon Chamber of Commerce Directory | Interactive Analysis">
+    <meta property="og:description" content="An interactive directory and analysis of Oregon's Chambers of Commerce. Discover the organizations driving local economies, compare their effectiveness, and connect.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/oregon_chamber_directory.html">
+    <meta property="og:image" content="https://placehold.co/1200x630/065f46/fcfaf8?text=Oregon+Chamber+of+Commerce+Directory">
+    
+    <!-- X (Twitter) Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Oregon Chamber of Commerce Directory | Interactive Analysis">
+    <meta name="twitter:description" content="An interactive directory and analysis of Oregon's Chambers of Commerce. Discover the organizations driving local economies, compare their effectiveness, and connect.">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/065f46/fcfaf8?text=Oregon+Chamber+of+Commerce+Directory">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
     <style>
-      /* Custom font for a more modern look */
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+        background-color: #fcfaf8;
+        color: #374151;
       }
     </style>
   <script type="importmap">
@@ -25,7 +43,7 @@
 }
 </script>
 </head>
-  <body class="bg-slate-50 text-slate-800">
+  <body class="antialiased">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

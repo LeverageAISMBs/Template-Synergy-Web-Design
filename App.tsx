@@ -1,20 +1,19 @@
-
 import React, { useState } from 'react';
 import { Page } from './types';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';
+import DirectoryPage from './pages/DirectoryPage';
 import Services from './pages/Services';
 import FAQ from './pages/FAQ';
 import AboutUs from './pages/AboutUs';
 
 const App: React.FC = () => {
-  const [currentPage, setCurrentPage] = useState<Page>('Home');
+  const [currentPage, setCurrentPage] = useState<Page>('Directory');
 
   const renderPage = () => {
     switch (currentPage) {
-      case 'Home':
-        return <Home />;
+      case 'Directory':
+        return <DirectoryPage />;
       case 'Services':
         return <Services />;
       case 'FAQ':
@@ -22,7 +21,7 @@ const App: React.FC = () => {
       case 'AboutUs':
         return <AboutUs />;
       default:
-        return <Home />;
+        return <DirectoryPage />;
     }
   };
 
