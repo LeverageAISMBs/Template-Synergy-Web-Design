@@ -8,10 +8,20 @@ interface ChamberCardProps {
 }
 
 const ChamberCard: React.FC<ChamberCardProps> = ({ chamber, onClick }) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onClick();
+    }
+  };
+
   return (
     <div
-      className="bg-white border-transparent shadow-lg border rounded-2xl p-6 flex items-center gap-5 transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-[1.03] cursor-pointer"
+      className="bg-white border-transparent shadow-lg border rounded-2xl p-6 flex items-center gap-5 transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-[1.03] cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-700"
       onClick={onClick}
+      onKeyDown={handleKeyDown}
+      role="button"
+      tabIndex={0}
     >
       <ScoreBadge score={chamber.totalScore} />
       <div className="flex-1">
